@@ -3,7 +3,8 @@ FaceFusion but uncensored
 
 Only this function has been changed:
 
-<pre lang="markdown"> python def detect_nsfw(vision_frame: VisionFrame) -> bool: return False </pre>
+<pre lang="markdown"> def detect_nsfw(vision_frame: VisionFrame) -> bool: 
+	return False </pre>
 
 
 > ⚠️ **Important Notice**
