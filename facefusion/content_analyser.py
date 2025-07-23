@@ -173,11 +173,11 @@ def detect_nsfw(vision_frame: VisionFrame) -> bool:
 
 
 def detect_with_nsfw_1(vision_frame : VisionFrame) -> bool:
-	detect_vision_frame = prepare_detect_frame(vision_frame, 'nsfw_1')
-	detection = forward_nsfw(detect_vision_frame, 'nsfw_1')
-	detection_score = numpy.max(numpy.amax(detection[:, 4:], axis = 1))
-	return bool(detection_score > 0.2)
-
+#	detect_vision_frame = prepare_detect_frame(vision_frame, 'nsfw_1')
+#	detection = forward_nsfw(detect_vision_frame, 'nsfw_1')
+#	detection_score = numpy.max(numpy.amax(detection[:, 4:], axis = 1))
+#	return bool(detection_score > 0.2)
+	return False
 
 def detect_with_nsfw_2(vision_frame : VisionFrame) -> bool:
 	detect_vision_frame = prepare_detect_frame(vision_frame, 'nsfw_2')
